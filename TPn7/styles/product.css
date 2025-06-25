@@ -1,0 +1,265 @@
+
+
+/* ----------------------------------
+   RESET Y GLOBAL
+---------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  line-height: 1.4;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* ----------------------------------
+   HEADER
+---------------------------------- */
+.barra-superior {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 15px 20px;
+  gap: 20px;
+}
+
+/* Logo */
+.barra-superior h1 a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+/* Búsqueda + carrito */
+.barra-superior form.busqueda-carrito {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.btn-buscar {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.carrito-icono {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.carrito-icono:hover {
+  transform: scale(1.1);
+}
+
+/* Perfil */
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.perfil img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* ----------------------------------
+   DETALLE DEL PRODUCTO
+---------------------------------- */
+.detalle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.imagen-destacada img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.info {
+  max-width: 500px;
+  text-align: left;
+}
+
+.info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.descripcion {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: seagreen;
+  margin-bottom: 20px;
+}
+
+.btn-agregar-carrito {
+  padding: 10px 20px;
+  background-color: seagreen;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-agregar-carrito:hover {
+  background-color: #45a049;
+  transform: scale(1.03);
+}
+
+/* ----------------------------------
+   PRODUCTOS RELACIONADOS
+---------------------------------- */
+.productos-relacionados {
+  padding: 40px 30px 20px;
+}
+
+.productos-relacionados h3 {
+  text-align: left;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.productos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.producto {
+  width: 200px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.producto-nombre {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.producto-puntos {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* Placeholder */
+.placeholder {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: repeating-conic-gradient(#ccc 0% 25%, #fff 0% 50%) 50% / 20px 20px;
+  color: #555;
+  font-size: 0.85rem;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* ----------------------------------
+   FOOTER
+---------------------------------- */
+footer {
+  background: #fff;
+  padding: 20px;
+}
+
+footer .categorias {
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+footer .categorias a {
+  font-size: 0.8rem;
+}
+
+footer .social-media,
+footer .app-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+footer img {
+  width: 28px;
+  height: auto;
+}
+
+footer p {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* ----------------------------------
+   RESPONSIVE
+---------------------------------- */
+@media (max-width: 768px) {
+  .detalle {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .info {
+    text-align: center;
+  }
+
+  .productos-grid {
+    gap: 15px;
+  }
+
+  .producto {
+    width: 90%;
+    max-width: 280px;
+  }
+}

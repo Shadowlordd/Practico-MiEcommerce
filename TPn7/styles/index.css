@@ -1,0 +1,311 @@
+
+
+/* ----------------------------------
+   RESET Y GLOBAL
+---------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  line-height: 1.4;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* ----------------------------------
+   HEADER
+---------------------------------- */
+.barra-superior {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 15px 20px;
+  gap: 20px;
+}
+
+/* Logo */
+.barra-superior h1 a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  flex-shrink: 0; /* No encoger */
+}
+
+/* Contenedor búsqueda + carrito */
+.barra-superior form.busqueda-carrito {
+  display: flex;
+  align-items: center;
+  flex: 1;             /* Ocupa espacio restante */
+  gap: 10px;
+}
+
+/* Input de búsqueda */
+.search-bar {
+  flex: 1;             /* Ocupa espacio restante en el form */
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Botón de búsqueda (icono 🔍) */
+.btn-buscar {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Icono de carrito */
+.carrito-icono {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.carrito-icono:hover {
+  transform: scale(1.1);
+}
+
+/* Perfil */
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.perfil img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* ----------------------------------
+   NAVEGACIÓN DE CATEGORÍAS
+---------------------------------- */
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background: #e0e0e0;
+}
+
+.categorias a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.85rem;
+  width: 80px;
+}
+
+.categorias img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+  transition: transform 0.3s;
+}
+
+.categorias a:hover img {
+  transform: scale(1.1);
+}
+
+/* ----------------------------------
+   SECCIÓN PROMOCIONES
+---------------------------------- */
+.promociones {
+  background-color: rgb(0, 92, 128);
+  padding: 20px;
+}
+
+.promociones-wrapper {
+  max-width: 1200px;
+  height: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+
+
+.promociones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px; /* Espacio grande entre promociones */
+  padding: 20px;
+}
+
+.promo {
+  width: 500px; /* Ancho uniforme como en la maqueta */
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.promo2 {
+  width: 500px; /* Ancho uniforme como en la maqueta */
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.promo2 img{
+    width: 99%;
+    position: relative;
+    border-radius: 20px;
+}
+
+.promo img {
+  width: 110%;
+  height: auto;
+  display: block;
+}
+/* Texto superpuesto: Disney y HBO */
+.promo-text, .promo-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Iconos dentro del bloque de texto */
+.promo-icon {
+  width: 200px !important;
+  height: auto;
+  border-radius: 20px;
+}
+/* Ajuste fino para el texto */
+.promo-text p,
+.promo-overlay p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+
+/* ----------------------------------
+   PRODUCTOS RECOMENDADOS & MÁS PEDIDOS
+---------------------------------- */
+.productos h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  
+}
+
+.productos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.producto {
+  width: 200px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 10px;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.producto-nombre {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.producto-puntos {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* Placeholder estilo tablero de ajedrez */
+.placeholder {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: repeating-conic-gradient(#ccc 0% 25%, #fff 0% 50%) 
+              50% / 20px 20px;
+  color: #555;
+  font-size: 0.85rem;
+  padding: 10px;
+}
+
+/* ----------------------------------
+   ENLACES CLICKEABLES (Producto)
+---------------------------------- */
+
+a.producto {
+  position: relative;
+  z-index: 2;
+}
+
+a.producto:focus {
+  outline: none;
+}
+
+a.producto:visited {
+  color: inherit;
+}
+
+
+/* ----------------------------------
+   FOOTER
+---------------------------------- */
+footer {
+  background: #fff;
+  padding: 20px;
+}
+
+footer .categorias {
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+footer .categorias a {
+  font-size: 0.8rem;
+}
+
+footer .social-media,
+footer .app-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+footer img {
+  width: 28px;
+  height: auto;
+}
+
+footer p {
+  font-size: 0.75rem;
+  color: #888;
+}

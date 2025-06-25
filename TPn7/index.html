@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiEcommerce – Inicio</title>
+  <link rel="stylesheet" href="styles/index.css"> <!-- Asegúrate de que la ruta sea correcta -->
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="barra-superior">
+      <h1><a href="index.html">MiEcommerce</a></h1>
+
+      <!-- Envolvemos el input en un <form> para que el botón "enter" envíe la búsqueda -->
+      <form action="buscar" method="get" class="busqueda-carrito">
+        <input
+          type="search"
+          name="q"
+          placeholder="Buscar productos…"
+          class="search-bar"
+          aria-label="Buscar productos">
+        <button type="submit" class="btn-buscar">
+          🔍
+        </button>
+        <a href="cart.html">
+          <img
+            src="assets/pnj/carrito.png"
+            alt="Ver carrito"
+            class="carrito-icono">
+        </a>
+      </form>
+        <a href="login.html" class="perfil">
+        <img src="assets/pnj/users.png" alt="Icono de usuario">
+  <span>Users</span>
+</a>
+    </div>
+  </header>
+
+  <!-- CATEGORÍAS -->
+  <nav class="categorias" aria-label="Categorías de productos">
+    <!-- Añadimos alt descriptivos y unificamos la ruta de los iconos -->
+    <a href="#">
+      <img src="assets/pnj/electronic.png" alt="Icono Electrónica">
+      <span>Electrónica</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/alimentos.png" alt="Icono Alimentos">
+      <span>Alimentos</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/bebidas.png" alt="Icono Bebidas">
+      <span>Bebidas</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/indumentaria.png" alt="Icono Indumentaria">
+      <span>Indumentaria</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/juegos.png" alt="Icono Juegos">
+      <span>Juegos</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/automotor.png" alt="Icono Automotor">
+      <span>Automotor</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/hogar.png" alt="Icono Hogar">
+      <span>Hogar</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/otros.png" alt="Icono Otros">
+      <span>Otros</span>
+    </a>
+  </nav>
+
+  <!-- PROMOCIONES -->
+  <section class="promociones">
+  <div class="promociones-wrapper">
+    <div class="promo">...</div>
+    <div class="promo2">...</div>
+  </div>
+</section>
+
+
+  <section class="promociones">
+    <div class="promo">
+      <img
+        src="assets/disney1.jpeg"
+        alt="Combo Plus Disney">
+      <div class="promo-text">
+        <img
+          src="assets/iconodisney.jpeg"
+          alt="Logo de Disney"
+          class="promo-icon">
+        <p>50% OFF en Combo Plus canjeando 50.000 puntos MiEcommerce</p>
+      </div>
+    </div>
+
+    <!-- le coloque "promo" para aplicar el mismo estilo base -->
+    <div class="promo2">
+      <img
+        src="assets/hbomax2.jpeg"
+        alt="Promoción HBO Max">
+      <div class="promo-text">
+        <img
+          src="assets/icono222hbo.jpeg"
+          alt="Logo HBO Max"
+          class="promo-icon">
+        <p>50% OFF en HBO Max canjeando 50.000 puntos MiEcommerce</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS RECOMENDADOS -->
+<section class="productos">
+  <h2>Te puede interesar</h2>
+  <div class="productos-grid">
+    <div class="producto">
+     <a href="product.html" class="producto">
+  <img src="assets/jack daniels.jpeg" alt="Jack Daniels Honey 750ml">
+  <p class="producto-nombre">Whiskey Jack Daniels Honey 750ml</p>
+  <p class="producto-puntos">5.000 PUNTOS</p>
+</a>
+
+    </div>
+
+    <div class="producto">
+        <img src="assets/gin.jpeg" alt="Manchester Gin Glass">
+        <p class="producto-nombre">Manchester Gin Glass</p>
+        <p class="producto-puntos">5.000 PUNTOS</p>
+    </div>
+
+    <div class="producto">
+    <img src="assets/Landon.png" alt="London No.1 ">
+    <p class="producto-nombre">London No.1 </p>
+    <p class="producto-puntos">5.000 PUNTOS</p>
+    </div>
+
+<!-- etc. -->
+
+    <div class="producto">
+      <div class="placeholder">
+        <span>Nombre del producto o servicio</span>
+        <span>XX.XXX PUNTOS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- LOS MÁS PEDIDOS -->
+  <section class="mas-pedidos">
+  <h2>Los más pedidos</h2>
+  <div class="productos-grid">
+    <div class="producto">
+      <img src="assets/cocacola.pnj.webp" alt="Coca Cola Lata x8">
+      <p class="producto-nombre">Pack Coca Cola Lata x8</p>
+      <p class="producto-puntos">1.000 PUNTOS</p>
+    </div>
+
+    <div class="producto">
+  <img src="assets/fernet.jpeg" alt="Fernet Branca 750ml">
+  <p class="producto-nombre">Fernet Branca 750ml</p>
+  <p class="producto-puntos">5.000 PUNTOS</p>
+</div>
+
+<div class="producto">
+  <img src="assets/skyy.jpeg" alt="Skyy Vodka">
+  <p class="producto-nombre">Skyy Vodka</p>
+  <p class="producto-puntos">5.000 PUNTOS</p>
+</div>
+
+<!-- seguir? -->
+
+    <div class="producto">
+      <div class="placeholder">
+        <span>Próximo producto</span>
+        <span>XX.XXX PUNTOS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <nav class="categorias" aria-label="Enlaces del pie de página">
+            <a href="#">
+      <img src="assets/pnj/electronic.png" alt="Icono Electrónica">
+      <span>Electrónica</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/alimentos.png" alt="Icono Alimentos">
+      <span>Alimentos</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/bebidas.png" alt="Icono Bebidas">
+      <span>Bebidas</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/indumentaria.png" alt="Icono Indumentaria">
+      <span>Indumentaria</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/juegos.png" alt="Icono Juegos">
+      <span>Juegos</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/automotor.png" alt="Icono Automotor">
+      <span>Automotor</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/hogar.png" alt="Icono Hogar">
+      <span>Hogar</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/otros.png" alt="Icono Otros">
+      <span>Otros</span>
+    </a>
+    </nav>
+
+    <div class="social-media" aria-label="Redes sociales">
+         <a href="#"><img src="assets/twitter-brands.svg" alt="Twitter"></a>
+         <a href="#"><img src="assets/facebook-brands.svg" alt="Facebook"></a>
+         <a href="#"><img src="assets/instagram-brands.svg" alt="Instagram"></a>
+         <a href="#"><img src="assets/youtube-brands.svg" alt="YouTube"></a>
+    </div>
+
+    <div class="app-links" aria-label="Descarga la app">
+                <a href="#"><img src="assets/apple-brands.svg" alt="App Store"></a>
+                <a href="#"><img src="assets/google-play-brands.svg" alt="Google Play"></a>
+    </div>
+
+    <p>© MiEcommerce. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

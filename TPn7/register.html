@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - MiEcommerce</title>
+    <link rel="stylesheet" href="styles/login.css"> <!-- Usa los mismos estilos -->
+</head>
+<body>
+    <header>
+        <div class="barra-titulo">
+            <h1><strong>Mi</strong>Ecommerce</h1>
+        </div>
+    </header>
+    <main>
+        <section class="register-container">
+            <h2>¡Regístrate!</h2>
+            <form action="register.php" method="post">
+                <input type="email" id="email" name="email" placeholder="Tu email" required>
+                <br>
+                <input type="password" id="password" name="password" placeholder="Tu nueva contraseña" required>
+                <br>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Repite tu contraseña" required>
+                <br>
+                <button>Registrarse</button>
+            </form>
+        </section>
+        <p class="register-terer"> ¿Ya tienes cuenta? <a href="login.html">Inicia sesion</a></p>
+    </main>
+    <footer>
+        <p>© MiEcommerce. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

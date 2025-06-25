@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrito – MiEcommerce</title>
+  <link rel="stylesheet" href="styles/cart.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="barra-superior">
+      <h1><a href="index.html">MiEcommerce</a></h1>
+
+      <form action="/buscar" method="get" class="busqueda-carrito">
+        <input type="search" name="q" class="search-bar" placeholder="Buscar productos…" aria-label="Buscar productos" />
+        <button type="submit" class="btn-buscar">🔍</button>
+        <a href="cart.html">
+          <img src="assets/pnj/carrito.png" alt="Ver carrito" class="carrito-icono" />
+        </a>
+      </form>
+
+      <a href="login.html" class="perfil">
+        <img src="assets/pnj/users.png" alt="Icono de usuario" />
+        <span>Users</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main class="carrito-container">
+    <h2>Mi Carrito</h2>
+
+    <!-- LISTA DE PRODUCTOS -->
+    <section class="carrito-listado">
+      <article class="carrito-item">
+        <img src="assets/jack daniels.jpeg" alt="Jack Daniel's Tennessee Honey" class="item-img">
+        <div class="item-info">
+          <h3>Jack Daniel's Tennessee Honey Botella 750ml</h3>
+          <div class="item-controles">
+            <button aria-label="Quitar uno">➖</button>
+            <span class="cantidad">1</span>
+            <button aria-label="Agregar uno">➕</button>
+          </div>
+        </div>
+        <p class="item-puntos">5.000 PUNTOS</p>
+      </article>
+
+      <article class="carrito-item">
+        <img src="assets/gin.jpeg" alt="Manchester Gin Glass" class="item-img">
+        <div class="item-info">
+          <h3>Manchester Gin Glass</h3>
+          <div class="item-controles">
+            <button aria-label="Quitar uno">➖</button>
+            <span class="cantidad">1</span>
+            <button aria-label="Agregar uno">➕</button>
+          </div>
+        </div>
+        <p class="item-puntos">5.000 PUNTOS</p>
+      </article>
+
+      <article class="carrito-item">
+        <img src="assets/cocacola.pnj.webp" alt="Coca Cola Pack x8" class="item-img">
+        <div class="item-info">
+          <h3>Coca Cola Lata  x8</h3>
+          <div class="item-controles">
+            <button aria-label="Quitar uno">➖</button>
+            <span class="cantidad">2</span>
+            <button aria-label="Agregar uno">➕</button>
+          </div>
+        </div>
+        <p class="item-puntos">1.000 PUNTOS</p>
+      </article>
+    </section>
+
+    <!-- TOTAL Y ACCIONES -->
+    <section class="carrito-acciones">
+      <div class="carrito-totales">
+        <p>Total: <strong>11.000 PUNTOS</strong></p>
+        <label for="cupon">Cupón de descuento:</label>
+        <input type="text" id="cupon" placeholder="Ingresá tu código" />
+      </div>
+
+      <div class="carrito-botones">
+        <a href="index.html" class="btn volver">Volver al listado</a>
+        <a href="pago.html" class="btn pagar">Ir a Pagar</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER SIMPLE -->
+  <footer>
+    <p>© MiEcommerce. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

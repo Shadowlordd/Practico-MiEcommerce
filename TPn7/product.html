@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detalles del producto – MiEcommerce</title>
+  <link rel="stylesheet" href="styles/product.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="barra-superior">
+      <h1><a href="index.html">MiEcommerce</a></h1>
+
+      <form action="/buscar" method="get" class="busqueda-carrito">
+        <input type="search" name="q" class="search-bar" placeholder="Buscar productos…" aria-label="Buscar productos">
+        <button type="submit" class="btn-buscar">🔍</button>
+        <a href="cart.html">
+          <img src="assets/pnj/carrito.png" alt="Ver carrito" class="carrito-icono" />
+        </a>
+      </form>
+
+      <a href="login.html" class="perfil">
+        <img src="assets/pnj/users.png" alt="Icono de usuario" />
+        <span>Users</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- DETALLE DEL PRODUCTO -->
+  <main class="detalle-producto">
+    <section class="detalle">
+      <div class="imagen-destacada">
+        <img src="assets/jack daniels.jpeg" alt="Whiskey Jack Daniels Honey 750ml" />
+      </div>
+      <div class="info">
+        <h2>Whiskey Jack Daniels Honey 750ml</h2>
+        <p class="descripcion">
+          Edición suave y dulce del clásico Jack Daniels.
+          <br><br>
+          Aroma a caramelo, roble tostado y toques de miel y vainilla.
+          <br>
+          Sabor cremoso con notas de vainilla, albaricoque y final redondo.
+        </p>
+        <p class="precio">5.000 PUNTOS</p>
+        <button class="btn-agregar-carrito">Agregar al carrito</button>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS RELACIONADOS -->
+    <section class="productos-relacionados">
+      <h3>También te puede interesar</h3>
+      <div class="productos-grid">
+        <div class="producto">
+          <img src="assets/gin.jpeg" alt="Manchester Gin Glass" />
+          <p class="producto-nombre">Manchester Gin Glass</p>
+          <p class="producto-puntos">5.000 PUNTOS</p>
+        </div>
+        <div class="producto">
+          <img src="assets/skyy.jpeg" alt="Skyy Vodka" />
+          <p class="producto-nombre">Skyy Vodka</p>
+          <p class="producto-puntos">5.000S</p>
+        </div>
+        <div class="producto">
+          <div class="placeholder">
+            <span>Próximo producto</span>
+            <span>XX.XXX PUNTOS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <nav class="categorias" aria-label="Enlaces del pie de página">
+            <a href="#">
+      <img src="assets/pnj/electronic.png" alt="Icono Electrónica">
+      <span>Electrónica</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/alimentos.png" alt="Icono Alimentos">
+      <span>Alimentos</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/bebidas.png" alt="Icono Bebidas">
+      <span>Bebidas</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/indumentaria.png" alt="Icono Indumentaria">
+      <span>Indumentaria</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/juegos.png" alt="Icono Juegos">
+      <span>Juegos</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/automotor.png" alt="Icono Automotor">
+      <span>Automotor</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/hogar.png" alt="Icono Hogar">
+      <span>Hogar</span>
+    </a>
+    <a href="#">
+      <img src="assets/pnj/otros.png" alt="Icono Otros">
+      <span>Otros</span>
+    </a>
+    </nav>
+
+    <div class="social-media" aria-label="Redes sociales">
+         <a href="#"><img src="assets/twitter-brands.svg" alt="Twitter"></a>
+         <a href="#"><img src="assets/facebook-brands.svg" alt="Facebook"></a>
+         <a href="#"><img src="assets/instagram-brands.svg" alt="Instagram"></a>
+         <a href="#"><img src="assets/youtube-brands.svg" alt="YouTube"></a>
+    </div>
+
+    <div class="app-links" aria-label="Descarga la app">
+                <a href="#"><img src="assets/apple-brands.svg" alt="App Store"></a>
+                <a href="#"><img src="assets/google-play-brands.svg" alt="Google Play"></a>
+    </div>
+
+    <p>© MiEcommerce. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
+
+  
